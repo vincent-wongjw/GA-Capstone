@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+  <header class="header-section" style="margin-top:-45px">
+    <div class="container header-settings mt-5 pb-1">
+      <h1><b>Welcome to my Restaurant Analytics System</b></h1>
+      <h5><i>Powered by Yelp data</i></h5>
+      <img style="margin-top:15px" src="/static/yelp_pic1.jpg" alt="People love us on Yelp">
+      <div style="margin-top:15px">
+        <h3>Project Summary</h3>
+        <p class="article-content" style="margin-top:-10px">
+          As an avid foodie, I often rely on review apps like Tripadvisor and Yelp for reliable restaurant recommendations when I am abroad. Under the hood of these sleek apps is data-driven innovation powering models that are constantly being fine tuned to facilitate an optimal user experience. <b>
+
+          Inspired by the technology that powers these apps, i built a a fake reviews detection system using NLP and classification techniques, and restaurant recommendation system using recommender filtering techniques to recommend products based on user similarity.
+        </p>
+    </div>
+  </header>
+  <div class="column" style="margin-left: 900px; margin-top:-720px">
+      <div class="container summary-section summary-text" style="margin-top: 10px">
+          <h5><i>Libraries/Tools utilised</i></h5>
+          <font size ="2">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-light">Python - Pandas, Numpy, Scikit-learn</li>
+              <li class="list-group-item list-group-item-light">Datalab using GCP VM</li>
+              <li class="list-group-item list-group-item-light">SQLite3</li>
+              <li class="list-group-item list-group-item-light">NLP - NLTK (Word Processing, Sentiment Analysis, BOW, Word2Vec</li>
+              <li class="list-group-item list-group-item-light">Deep Learning - Keras</li>
+              <li class="list-group-item list-group-item-light">Recommender Systems - Manual coding of collab/content based filtering, Surprise library</li>
+              <li class="list-group-item list-group-item-light">Deployment - Flask/Jinja, HTML/JavaScript/CSS</li>
+            </ul>
+          </font>
+          </div>
+      </div>
+  </div>
+{% endblock content %}

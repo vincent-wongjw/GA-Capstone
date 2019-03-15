@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+	<header class="header-section">
+		<div>
+			<h1>Test out review text here</h1>
+		</div>
+	</header>
+	<div class ="row">
+		<div class="column" style="margin-left: 20px; margin-top:0px">
+		    <!-- Form to obtain user review details -->
+		    <form method="POST">
+		      <div>
+
+		        <!-- Form to obtain user flat details -->
+		<!--         <div class="row lg-12 mx-35"> -->
+		          <div class="col-9">
+
+		            <div class="row"> <!-- row for review labels -->
+		              <div>
+		                {{ form.hidden_tag() }}
+		                {{ form.review.label }}
+		              </div>
+		            </div>
+
+		            <div class="row"> <!-- row for review forms -->
+		              <div style="height:320px">
+		                {{ form.review }}
+		              </div>
+		            </div>
+
+		          <!-- </div> -->
+		          <div class="submit-button " style="margin-left: -10px; margin-top:10px">
+		            <a>{{ form.submit() }}</a>
+		          </div>
+		        </div>
+
+		      </div>
+		    </form>
+		</div>
+		{% if display_result == True %}
+		<div class="column" style="margin-left: 200px; margin-top:0px">
+			<div class="container summary-section summary-text" style="margin-top: 10px">
+		        <font size="4">
+		        <h1 class="pt-2">Results:</h1>
+		        <ul>
+		          <br>
+		          <li>Real or fake review? : <b>{{nb_prediction}}</b></li>
+		          <li>Sentiment polarity : <b>{{sentiment_polarity}}</b></li>
+		          <li>Subjectivity : <b>{{subjectivity}}</b></li>
+
+		        </ul>
+		    </font>
+		    </div>
+	    </div>
+	    {% endif %}
+	</div>
+{% endblock content %}

@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class ="row">
+  <div class ="column" style="width:550px; margin-top: -50px">
+    <div class="container py-5 search-bar" style="height:932px">
+      <form method="POST">
+        <div>
+          <div class="container header-settings mt-5 pb-1">
+            <h2><b>New User - Cold Start</b></h2>
+          </div>
+            <div class="col-9" style="margin-left:30px">
+              <div class ="row">
+                {{ form.hidden_tag() }}
+              </div>
+              <div class ="row" style="margin-top:20px">
+                <b>{{ form.new_restaurants_1.label }}</b>
+              </div>
+              <div class ="row">
+                {{ form.new_restaurants_1 }}
+              </div>
+              <div class ="row" style="margin-top:20px">
+                <b>{{ form.new_restaurants_2.label }}</b>
+              </div>
+              <div class ="row">
+                {{ form.new_restaurants_2 }}
+              </div>
+              <div class ="row" style="margin-top:20px">
+                <b>{{ form.new_restaurants_3.label }}</b>
+              </div>
+              <div class ="row">
+                {{ form.new_restaurants_3 }}
+              </div>
+              <div class ="row" style="margin-top:70px">
+                <b>{{ form.recsys_type.label }}</b>
+              </div>
+              <div class ="row">
+                {{ form.recsys_type }}
+              </div>
+              <div class ="row" style="margin-top:20px">
+                <b>{{ form.num_of_recommendations.label }}</b>
+              </div>
+              <div class ="row">
+                {{ form.num_of_recommendations }}
+              </div>
+              <div class="submit-button submit-space" style="margin-left:-300px ; margin-top:30px">
+                <a>{{ form.submit() }}</a>
+              </div>
+            </div>
+        </div>
+      </form> 
+    </div>
+  </div>
+  <div class ="column" style="width:550px; margin-left: 15px; margin-top: -50px">
+    <div class="container py-5 search-bar" style="height:932px">
+      <div>
+        <div class="container header-settings mt-5 pb-1">
+          <h2><b>Results (New User - Cold Start)</b></h2>
+          <h6><i>Starting from most recommended restaurants</i></h6>
+          <div class="tablealign table mt-3" style="margin-left:50px ; margin-top:100px">
+            {% for table in tables_new %}
+              {{ table|safe }}
+            {% endfor %}
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
