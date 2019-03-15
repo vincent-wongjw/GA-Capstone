@@ -43,7 +43,7 @@ Using the fake reviews model optimized from the first section, we will use that 
 https://drive.google.com/open?id=0B8JIKvhJUvRdfjBaaFB3TWQ1MEstQVpnb1ZDTUZkampJTUpQaEVZYVJmSUVZZS1xSkNJXzA
 * Yelp Challenge 2019 dataset: https://www.yelp.com/dataset/challenge. Only the restaurant and reviews dataset were utilised for this project
 
-## <Do take note that data files generated from each of the workbooks are not uploaded due to large size. Kindly follow the README files in each of the folders, starting from the '0. Datasets' folder to generate the necessary files for subsequent folders>
+#### <Do take note that data files generated from each of the workbooks are not uploaded due to large size. Kindly follow the README files in each of the folders, starting from the '0. Datasets' folder to generate the necessary files for subsequent folders>
 
 ### 1) Understand and build a model to differentiate fake restaurant reviews from legitimate ones
 *<Code found in '2. Part 1 - Fake reviews' folder under 'Fake reviews' Notebook>*
