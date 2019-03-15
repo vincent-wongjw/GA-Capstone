@@ -79,7 +79,7 @@ https://drive.google.com/open?id=0B8JIKvhJUvRdfjBaaFB3TWQ1MEstQVpnb1ZDTUZkampJTU
   * A manual, user-based collab filtering approach was built from scratch to help me understanding how a recommender system works. Subsequently, the Surprise library was used for testing of user-based, item-based and SVD collab-filtering recommender systems 
   * Similarity measures tested - Cosine Similarity and Pearson Correlation
   * Evaluation - using RMSE and Precision score (Recommendation threshold - above 3.5 stars). Training set based on reviews before 2017, and testing set based on reviews from 2017 onwards
-  * Results: SVD achieved the best RMSE score of 0.917 while the manual user-based collaborative 
+  * Results: SVD achieved the best RMSE score of 0.917 while the manual user-based collaborative filtering method achieved the best precision score of 0.798. 
 * For the content-based filtering method, I used restaurant attributes to compare similarity across different restaurants to enable users to discover restaurants based on their previously visited restaurants
   * Some feature engineering was carried out - such as whether a restaurant is a chain? Do they serve breakfast/lunch/dinner?
   * Manually coded a content based filtering approach that recommended restaurants ordered by historical average ratings. 
